@@ -12,7 +12,8 @@ socket.on('open', () => {
 
 socket.on('message', (message) => {
     const data = JSON.parse(message);
-    console.log(`Received from server: Name: ${data.forward}, ${data.left}, ${data.right}`);
+    console.log(`Received from server: ${data.forward}`)
+  //console.log(`Received from server: Name: ${data.forward}, ${data.left}, ${data.right}`);
 });
 
 socket.on('close', () => {
